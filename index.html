@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Terminologi Medis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(0,0,0,0.1));
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rgba(140, 13, 157, 0.9);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-grow: 1;
+            width: 90%;
+            backdrop-filter: blur(5px);
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .feature-card h3 {
+            color: #8c0d9d;
+            margin-top: 0;
+        }
+        
+        .feature-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #8c0d9d;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.2s ease;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .button:hover {
+            background-color: #6b0979;
+        }
+        
+        .button.large {
+            font-size: 22px;
+            padding: 1rem 2rem;
+            margin: 2rem auto;
+            display: block;
+            width: fit-content;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 0.5rem;
+            min-width: 180px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #8c0d9d;
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            color: #555;
+            font-size: 16px;
+        }
+        
+        footer {
+            background-color: rgba(140, 13, 157, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        .welcome-message {
+            background-color: rgba(140, 13, 157, 0.1);
+            border-left: 5px solid #8c0d9d;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Terminologi Medis</h1>
+        <p>Platform pembelajaran interaktif untuk kondisi psikiatri dan psikologis</p>
+    </header>
+    
+    <div class="container">
+        <div class="welcome-message">
+            <h2>Selamat Datang di Aplikasi Terminologi Medis</h2>
+            <p>Aplikasi ini dirancang untuk membantu Anda mempelajari terminologi medis khususnya di bidang psikiatri dan psikologi dengan cara yang interaktif dan menyenangkan.</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Kondisi Medis</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Kolom Input</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Menit per Latihan</div>
+            </div>
+        </div>
+        
+        <a href="spinner.html" class="button large">Mulai Spinner Terminologi Medis</a>
+        
+        <h2>Fitur Utama</h2>
+        
+        <div class="feature-card">
+            <h3>Spinner Acak</h3>
+            <p>Memilih secara acak kondisi medis psikiatri dan psikologis untuk dipelajari setiap kali Anda menggunakan aplikasi ini.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Latihan Terjadwal</h3>
+            <p>Timer 5 menit untuk membantu Anda fokus dan efisien dalam mempelajari setiap kondisi yang muncul.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Pengecualian Kondisi</h3>
+            <p>Kemampuan untuk mengecualikan kondisi yang sudah Anda kuasai, sehingga fokus pada materi yang masih perlu dipelajari.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Penyimpanan Otomatis</h3>
+            <p>Data latihan Anda disimpan secara otomatis dan dapat diakses kembali untuk kondisi yang sama.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Dashboard Terminologi Medis</p>
+    </footer>
+</body>
+</html>
